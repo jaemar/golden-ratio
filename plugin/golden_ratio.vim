@@ -104,10 +104,10 @@ function! s:resize_to_golden_ratio()
   endif
 
   let l:ah = s:golden_ratio_height()
-  let l:bh = l:ah / 1.618
+  let l:bh = l:ah / 3.618
 
   let l:aw = s:golden_ratio_width()
-  let l:bw = l:aw / 1.618
+  let l:bw = l:aw / 3.618
 
   let l:parallel_windows = s:find_parallel_windows(winnr())
   call s:resize_ignored_windows(l:parallel_windows, l:bw, l:bh)
